@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="en">
+	<meta name="viewport" content="width:device-width, initial-scale=1.0">
+	<link rel="icon" href="img/icon2.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title>Wall-X</title>
+</head>
+<body onload="myFunction()" style="transition: background-color .5s;margin:0;">
+	<div id="load" style="font-size:40px;text-align:center;">
+	<div id="loader"></div>
+	Loading Please Wait...
+	</div>
+	<div class="container-flex" id="main" style="transition: margin-left .5s;display:none;">
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="#head">HOME</a>
+  		<a href="#wall">WALLPAPERS</a>
+  		<a href="#form">UPLOAD</a>
+  		<a href="#about">ABOUT US</a>
+	</div>
+	<div class="page-header text-center" id="head" style="height:auto;">
+	<span class="ham" style="font-size:40px;width:40px;cursor:pointer;margin-left:-49%; position:fixed; z-index:1;color:wheat;transition:all 1s;" onclick="openNav()">&#9776;</span>
+	<img height="60%" src="img/icon2.png" style="float:left;margin-left:10%;margin-top:4%;">
+	<div style="margin-right:15%;padding-top:4%; color:wheat;">
+		<h1>WALL-X</h1>
+		<br>
+		<h3>WALLPAPERS DOWNLOAD &amp; UPLOAD SITE</h3>
+	</div>
+	<br><br>
+	</div>
+	<br>
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+  </ul>
+  
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/4.jpg"  width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/5.jpg"  width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/6.jpg"  width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/7.jpg"  width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="img/8.jpg"  width="1100" height="500">
+    </div>
+  </div>
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div><br>
+<div class="container-flex" id="wall">
+	<!--modal start-->
+	<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">WALL-X</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" style="height:50vh;">
+          <img name="modal" src="#" style="width:100%;height:100%">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a id="down" href="#" download="" onlclick="down()" style="text-decoration:none;color:whitesmoke;"><button type="button" class="btn btn-danger">Download</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--modal end-->
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/1.jpg">
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change1()" data-toggle="modal" data-target="#myModal" >
+      			<img src="img/gall/2.jpg">
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change2()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/3.jpg" >
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change3()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/4.jpg">
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change4()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/5.jpg">
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change5()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/6.jpg" >
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change6()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/7.jpg">
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change7()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/8.jpg">
+    		</a>
+  		</div>
+	</div><br>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change8()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/9.jpg">
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change9()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/10.jpg">
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change10()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/11.jpg" >
+    		</a>
+  		</div>
+	</div>
+	<div class="responsive">
+  		<div class="gallery">
+    		<a target="_blank" onclick="change11()" data-toggle="modal" data-target="#myModal">
+      			<img src="img/gall/12.jpg" >
+    		</a>
+  		</div>
+	</div><br>
+</div>
+<div class="clearfix"></div>
+<div class="container-flex" id="form">
+	<form id="mainform" action="#" method="post" enctype="multipart/from-data" onsubmit="done()">
+		<header style="text-align:center;background-image:linear-gradient(rgba(71, 49, 42,0.7), rgba(71, 49, 42,0.7)),url(img/bg-01.jpg); height:90px;border-top-left-radius: inherit;border-top-right-radius: inherit; background-size: cover; background-position: center; color:white;">
+			<h4 style="line-height: 60px;font-weight: lighter;">UPLOAD</h4>
+			<h6 style="line-height: 0px;font-weight: lighter;">YOUR OWN WALLPAPER</h6>
+		</header>
+		<br><br>
+		<center>
+		<input type="text" placeholder="First Name" name="fusr" size="30"><br>
+		<input type="text" placeholder="Last Name" name="lusr" size="30"><br>
+		<input type="email" placeholder="E-Mail" name="email" size="30"><br>
+		<input type="text" placeholder="City" name="city" size="30"><br><br><br>
+		<input type="file" name="upload" size="30" style="height:auto;font-size: 14px;"><br><br><br>
+		<button type="reset" class="btn btn-outline-dark" value="reset">Reset</button>
+		<button type="submit" class="btn btn-outline-dark" value="submit">upload</button><br><br>
+		</center>
+	</form>
+</div>
+<div class="container-flex" id="about">
+<div class="abouthead">
+Our Team
+</div>
+<div class="split left">
+  <div class="centered">
+    <img src="img/gautam.png" alt="Designer"><br><br>
+    <h2 style="font-weight: lighter;">Gautam Rawat</h2>
+    <h4 style="font-weight: lighter;">FRONT-END</h4>
+    <p style="font-weight: lighter;">HTML,CSS,BootStrap4,Jquery,JavaScript</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="img/nikhil.jpg" alt="Developer"><br><br>
+    <h2 style="font-weight: lighter;">Nikhil Kumar</h2>
+    <h4 style="font-weight: lighter;">BACK-END</h4>
+    <p style="font-weight: lighter;">JAVA,JSP,DATABASE,Server Handling</p>
+  </div>
+</div>
+</div>     
+</div>
+<script>
+//For Side Nav bar animaiton
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+
+//For Scrolling animation
+
+$('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { 
+            return false;
+          } else {
+            $target.attr('tabindex','-1');
+            $target.focus(); 
+          };
+        });
+      }
+    }
+  });
+
+
+  //loader function
+  var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("load").style.display = "none";
+  document.getElementById("main").style.display = "block";
+}
+//function after uploading image
+function done()
+{
+	alert("your Wallpaper is Upladed Successfully");
+}
+//for gallery popup and image download
+function change()
+        	{
+        		document.modal.src="img/gall/1.jpg";document.getElementById("down").href="img/gall/1.jpg";
+        	}function change1()
+        	{
+        		document.modal.src="img/gall/2.jpg";document.getElementById("down").href="img/gall/2.jpg";
+        	}function change2()
+        	{
+        		document.modal.src="img/gall/3.jpg";document.getElementById("down").href="img/gall/3.jpg";
+        	}function change3()
+        	{
+        		document.modal.src="img/gall/4.jpg";document.getElementById("down").href="img/gall/4.jpg";
+        	}function change4()
+        	{
+        		document.modal.src="img/gall/5.jpg";document.getElementById("down").href="img/gall/5.jpg";
+        	}function change5()
+        	{
+        		document.modal.src="img/gall/6.jpg";document.getElementById("down").href="img/gall/6.jpg";
+        	}function change6()
+        	{
+        		document.modal.src="img/gall/7.jpg";document.getElementById("down").href="img/gall/7.jpg";
+        	}function change7()
+        	{
+        		document.modal.src="img/gall/8.jpg";document.getElementById("down").href="img/gall/8.jpg";
+        	}function change8()
+        	{
+        		document.modal.src="img/gall/9.jpg";document.getElementById("down").href="img/gall/9.jpg";
+        	}function change9()
+        	{
+        		document.modal.src="img/gall/10.jpg";document.getElementById("down").href="img/gall/10.jpg";
+        	}function change10()
+        	{
+        		document.modal.src="img/gall/11.jpg";document.getElementById("down").href="img/gall/11.jpg";
+        	}function change11()
+        	{
+        		document.modal.src="img/gall/12.jpg";document.getElementById("down").href="img/gall/12.jpg";
+        	}
+</script> 
+</body>
+</html>
