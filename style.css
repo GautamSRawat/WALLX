@@ -1,0 +1,270 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#about
+	{
+		height:100vh;
+		background-attachment: fixed;
+		background-image:  linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.62)),url("img/our.jpg");
+		background-position: center;
+		background-size:cover;
+	}
+.abouthead
+{
+height:15vh;
+line-height:15vh;
+background-color:transparent;
+font-size:50px;
+font-weight: lighter;
+color:whitesmoke;
+letter-spacing:4px;
+text-align:center;
+}
+.split 
+{
+	color:whitesmoke;
+  height: 85vh;
+  width: 50%;
+  background-color:transparent;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+.centered {
+    text-align: center;
+    padding:10%;
+}
+
+.centered img {
+	box-shadow:0px 0px 29px 2px black;
+    width: 250px;
+    border-radius: 50%;
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+	#mainform
+	{
+		box-shadow:0px 0px 29px 2px black;
+		border-radius:10px;
+		width:45%;
+		margin:auto;
+		height:auto;
+		background-color: whitesmoke;
+	}
+	#mainform input
+	{
+		width:80%;
+		height:40px;
+		background-color:inherit;
+		color:grey;
+		border:none;
+		border-bottom:2px solid transparent;
+		transition:all 1s;
+	}
+	#mainform input:focus
+	{
+		border-bottom:2px solid #343a40;
+	}
+	#wall
+	{
+		height:100vh;
+	}
+	#form{
+		padding:5%;
+		height:100vh;
+		background-attachment: fixed;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.63),rgba(0, 0, 0, 0.4)),url("img/formback.jpg");
+		background-position: center;
+		background-size: cover;
+	}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+	text-decoration: none;
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#head
+{
+	background-image: url("img/head1.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 5px 9px 3px grey;
+}
+.carousel-inner img {
+	margin:auto;
+      width: 100%;
+      height: 60vh;
+  }
+  #demo
+  {
+  	width:98.5%;
+  	margin:0 auto;
+  	box-shadow: 0px 5px 7px 3px grey;
+  }
+  div.gallery 
+{
+    transition:all 0.5s;
+}
+
+div.gallery:hover {
+    transform: scale(1.05);
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+.ham:hover
+{
+	animation-name: example;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes example
+{
+	0%{transform:rotate(5deg);}
+	25%{transform:rotate(-5deg);}
+	50%{transform:rotate(5deg);}
+	100%{transform:rotate(-5deg);}
+}
+
+.responsive {
+    padding: 0 12px;
+    float: left;
+    width: 33.1%;
+    margin-bottom:10px;
+}
+@media only screen and (max-width: 500px)
+{
+	.ham{
+		right:85%;
+	}
+	.sidenav {padding-top: 15px;}
+  	.sidenav a {font-size: 18px;}
+  	#form{height:auto;}
+
+}
+@media only screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  #head{height:200px;}
+  #head h1{font-size: 25px;}
+  #head h3{font-size: 15px;}
+  #about{max-height:100vh;}
+}
+@media only screen and (max-width: 1000px)
+{
+	.centered img{width:150px;}
+}
+@media only screen and (max-width: 700px) {
+	.ham{
+		right:85%;
+	}
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    .centered img{width:100px;}
+    .centered p{font-size:15px;}
+}    
+@media only screen and (max-width: 450px)
+{
+	.abouthead{font-size:25px;padding-top:20px;}
+	.centered h2{font-size:20px;}
+	.centered h4{font-size:15px;}
+	.centered p{font-size:10px;}
+	.centered{margin-top:70px;}
+}
+@media only screen and (max-width: 500px) {
+	.ham{
+		right:85%;
+	}
+    .responsive {
+        width: 100%;
+    }
+    #mainform h4{font-size:15px;}
+    #mainform h6{font-size:10px;}
+    #mainform{width:100%;}
+    .centered img{width:100px;}
+}
